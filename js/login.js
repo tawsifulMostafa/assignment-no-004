@@ -30,7 +30,7 @@
         function checkNoJobs() {
             const allCards = document.querySelectorAll('.job-card');
             let visibleCount = 0;
-            for (let i = 0; i < allCards.length; i++) {
+            for (let i = 0; i < allCards.length; i++){
                 if (allCards[i].style.display !== 'none') visibleCount++;
             }
             noJobsEl.style.display = visibleCount === 0 ? 'block' : 'none';
@@ -89,7 +89,7 @@
             filterCards('rejected');
         });
 
-        // Status Buttons
+        /* statun button */
         const statusButtons = document.querySelectorAll('.status-buttons');
 
         for (let i = 0; i < statusButtons.length; i++) {
@@ -108,7 +108,7 @@
             });
         }
 
-        // Trash Buttons
+          /* trash button */
         const trashButtons = document.querySelectorAll('.trash-btn');
 
         for (let i = 0; i < trashButtons.length; i++) {
