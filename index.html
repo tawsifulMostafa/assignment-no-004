@@ -10,6 +10,34 @@
 </head>
 
 <body>
+    <div class="grid justify-center">
+        <h1 class="text-[#020910] text-4xl mt-14">Job Application Tracker</h1>
+        <div class="flex gap-5 mt-5">
+            <div class="py-4 w-[360px] shadow-sm bg-[#ffffff] pl-5 rounded-xl">
+                <p>Total</p>
+                <p id="total-count" class="font-bold text-xl">8</p>
+            </div>
+            <div class="py-4 shadow-sm w-[360px] bg-[#ffffff] pl-5 rounded-xl">
+                <p>Interview</p>
+                <p id="interview-count" class="font-bold text-xl text-green-500">0</p>
+            </div>
+            <div class="py-4 shadow-sm w-[360px] bg-[#ffffff] pl-5 rounded-xl">
+                <p>Rejected</p>
+                <p id="rejected-count" class="font-bold text-xl text-red-500">0</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="py-20">
+        <div class="justify-between flex">
+            <p class="font-bold">Available jobs</p>
+            <p class="text-[#64748B]"><span id="available-count">8</span> jobs</p>
+        </div>
+        <div class="mt-3">
+            <button id="btn-all" class="btn btn-info">All</button>
+            <button id="btn-interview" class="btn btn-soft text-[#403f3f]">Interview</button>
+            <button id="btn-rejected" class="btn btn-soft text-[#403f3f]">Rejected</button>
+        </div>
 
 </body>
 
